@@ -15,7 +15,7 @@
             variant="outline-primary"
             class="pagenation-btn"
             @click="previusUsers"
-            >Previus</b-button
+            >Previous</b-button
           >
           <b-button
             size="lg"
