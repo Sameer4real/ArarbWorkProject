@@ -65,7 +65,6 @@ export default {
           `https://randomuser.me/api/?page=${currentPage}&results=5&seed=abc&inc=name,gender,email,location,dob,picture`
         );
         this.usersData = response.data.results;
-        console.log(response.data.results, "api hit");
       } catch (error) {
         console.error(error);
       }
@@ -81,12 +80,10 @@ export default {
     ChangeCord(newCord) {
       this.long = newCord.longitude;
       this.lat = newCord.latitude;
-      console.log(newCord, "new coord");
     },
   },
   mounted() {
     this.created();
-    console.log(this.locationSrc, "location");
   },
 };
 </script>
@@ -102,6 +99,7 @@ export default {
   flex-direction: column;
   gap: 30px;
   justify-content: space-between;
+  margin-top: -50px;
 }
 
 .title {

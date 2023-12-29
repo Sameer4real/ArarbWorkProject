@@ -54,30 +54,25 @@ export default {
   },
   methods: {
     passEvent() {
-      console.log("what it do", this.user.location.coordinates.latitude);
       this.$emit("changeCord", this.user?.location?.coordinates);
     },
-  },
-  mounted: function () {
-    console.log(this.user, "user");
   },
 };
 </script>
 
 <style scoped>
 .card-body {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 20px;
-  justify-content: center;
+  height: 230px;
+  padding: 10px 0px 10px 0px;
 }
-/* 
-.text-style {
-  font-size: 1.2rem;
-  color: #333;
-} */
 
+.col-md-6 {
+  flex: 1 0 auto;
+}
+
+.card-text {
+  margin-bottom: 7px;
+}
 .shadow-box {
   box-shadow: 10px 10px 25px -7px rgba(0, 0, 0, 0.2);
 }
