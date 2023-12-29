@@ -2,8 +2,9 @@
   <div>
     <b-card no-body class="overflow-hidden shadow-box">
       <b-row no-gutters>
-        <b-col md="6">
+        <b-col md="5">
           <b-card-img
+            height="100%"
             :src="user.picture.medium"
             alt="Image"
             class="rounded-0"
@@ -22,7 +23,7 @@
               user?.dob?.date?.substring(0, 10)
             }}</b-card-text>
 
-            <b-button size="lg" variant="primary" @click="passEvent"
+            <b-button size="md" variant="primary" @click="passEvent"
               >View location on maps</b-button
             >
           </b-card-body>
@@ -71,11 +72,11 @@ export default {
   margin-top: 20px;
   justify-content: center;
 }
-
+/* 
 .text-style {
   font-size: 1.2rem;
   color: #333;
-}
+} */
 
 .shadow-box {
   box-shadow: 10px 10px 25px -7px rgba(0, 0, 0, 0.2);
